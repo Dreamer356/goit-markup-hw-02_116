@@ -20,11 +20,11 @@ h1, h2, h3 {
   color: #4d5ae5;
 }
 
-.logo-span {
+.logo_span {
   color: #2e2f42;
 }
 
-.nav-link {
+.nav_link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -33,8 +33,8 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav_link:hover,
+.nav_link:focus {
   color: #404bbf;
 }
 
@@ -53,6 +53,27 @@ header {
   background: #fff;
   border-bottom: 1px solid #e7e9fc;
   padding: 24px 32px;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #2e2f42;
+}
+
+.nav-list li:first-child .nav-link {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.nav-list li:first-child .nav-link:hover,
+.nav-list li:first-child .nav-link:focus {
+  color: #404bbf;
+}
+
+.nav-list li:nth-child(2) .nav-link[href=""],
+.nav-list li:nth-child(3) .nav-link[href=""] {
+  pointer-events: none;
+  cursor: default;
 }
 
 .hero-section {
@@ -93,7 +114,7 @@ header {
 }
 
 .feature-text,
-.features-item p,
+.feature-item p,
 .portfolio-description,
 .team-member p,
 .footer-text {
@@ -113,6 +134,12 @@ header {
   letter-spacing: 0.02em;
 }
 
+.footer-link {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4d5ae5;
+}
+
 address {
   font-style: normal;
 }
@@ -129,17 +156,12 @@ address {
   color: #404bbf;
 }
 
-/* Скрытый заголовок для доступности */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-
+.nav-placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  pointer-events: none; 
+  cursor: default;
+} 
